@@ -12,9 +12,10 @@ class Quiz extends Component {
         }
     };
     render() {
+        const isQuizEnd = false;
         return (
             <div>
-                <QuizEnd displayQuiz={this.props.isQuizEnd}/>
+                <QuizEnd displayQuiz={this.props.isQuizEnd} />
                 <QuizQuestion quiz_question={quizData.quiz_questions[this.state.quiz_position - 1]} />
             </div>
         );
